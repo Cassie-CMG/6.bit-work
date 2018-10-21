@@ -93,7 +93,7 @@ int IsFull()
 
 char CheckOver()
 {
-	//检查是否连成3个子
+	//检查是否连成5个子
 	for (int row = 0; row < ROW; row++)
 	{
 		if (chess[row][0] == chess[row][1] && chess[row][0] == chess[row][2] 
