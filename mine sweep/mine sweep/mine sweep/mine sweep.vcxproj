@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{FC329D36-84E5-44B9-9641-E2071D9377C6}</ProjectGuid>
-    <RootNamespace>threechess</RootNamespace>
+    <ProjectGuid>{636E7FE8-8898-4665-B8B2-64FDDE79376C}</ProjectGuid>
+    <RootNamespace>minesweep</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -64,7 +64,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="chess.c" />
+    <ClCompile Include="mine.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
