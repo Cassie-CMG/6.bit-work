@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #define ROW 10
 #define COL 10
 #define MINE 20
@@ -23,7 +24,7 @@ void InIt(char mine_map[ROW + 2][COL + 2],char show_map[ROW + 2][COL + 2])
 	memset(show_map, '*', (ROW + 2) * (COL + 2));
 	srand(time(0));
 	int mine_count = MINE;
-	while (mine_count > 0);
+	while (mine_count > 0)
 	{
 		int row = rand() % 10 + 1;
 		int col = rand() % 10 + 1;
@@ -31,6 +32,7 @@ void InIt(char mine_map[ROW + 2][COL + 2],char show_map[ROW + 2][COL + 2])
 		{
 			mine_map[row][col] = '1';
 			mine_count--;
+		
 		}
 	}
 }

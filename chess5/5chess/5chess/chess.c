@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#define ROW 5
-#define COL 5
+#define ROW 3
+#define COL 3
 char chess[ROW][COL];
 
 void InIt()
@@ -20,17 +20,17 @@ void InIt()
 void Print()
 {
 	printf(" \n");
-	printf("     |---|---|---|---|---|\n");
+	printf("     |---|---|---|\n");
 	for (int row = 0; row < ROW; row++)
 	{
-		printf("     | %c | %c | %c | %c | %c |\n",
-			chess[ROW][0], chess[ROW][1], chess[ROW][2], chess[ROW][3], chess[ROW][4]);
+		printf("     | %c | %c | %c |\n",
+			chess[row][0], chess[row][1], chess[row][2]);
 		if (row != ROW - 1)
 		{
-			printf("     |---|---|---|---|---|\n");
+			printf("     |---|---|---|\n");
 		}
 	}
-	printf("     |---|---|---|---|---|\n");
+	printf("     |---|---|---|\n");
 	printf(" \n");
 }
 
@@ -93,11 +93,10 @@ int IsFull()
 
 char CheckOver()
 {
-	//检查是否连成5个子
+	//检查是否连成3个子
 	for (int row = 0; row < ROW; row++)
 	{
 		if (chess[row][0] == chess[row][1] && chess[row][0] == chess[row][2]
-			&& chess[row][0] == chess[row][3] && chess[row][0] == chess[row][4]
 			&& chess[row][2] != ' ')
 		{
 			return chess[row][0];
@@ -107,23 +106,20 @@ char CheckOver()
 	for (int col = 0; col < COL; col++)
 	{
 		if (chess[0][col] == chess[1][col] && chess[0][col] == chess[2][col]
-			&& chess[0][col] == chess[3][col] && chess[0][col] == chess[4][col]
 			&& chess[0][col] != ' ')
 		{
 			return chess[0][col];
 		}
 	}
 	if (chess[0][0] == chess[1][1] && chess[0][0] == chess[2][2]
-		&& chess[0][0] == chess[3][3] && chess[0][0] == chess[4][4]
 		&& chess[0][0] != ' ')
 	{
 		return chess[0][0];
 	}
-	if (chess[0][4] == chess[1][3] && chess[0][4] == chess[2][2]
-		&& chess[0][4] == chess[3][1] && chess[0][4] == chess[4][0]
+	if (chess[0][2] == chess[1][1] && chess[0][2] == chess[2][0]
 		&& chess[0][4] != ' ')
 	{
-		return chess[0][4];
+		return chess[0][2];
 	}
 	if (IsFull())
 	{
@@ -144,12 +140,14 @@ int main()
 		winner = CheckOver();
 		if (winner != ' ')
 		{
+			Print();
 			break;
 		}
 		ComputerTime();
 		winner = CheckOver();
 		if (winner != ' ')
 		{
+			Print();
 			break;
 		}
 	}
