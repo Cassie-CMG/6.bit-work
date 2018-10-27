@@ -15,16 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="print.c">
+    <ClCompile Include="match.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1count.c">
+    <ClCompile Include="killer.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="returndiffer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="printdifferbit.c">
+    <ClCompile Include="yangtri.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

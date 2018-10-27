@@ -1,8 +1,9 @@
 //打印一个整数的每一位
+#define  _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 
-int digit(int n)
+void digit(int n)
 {
 	if (n > 9)
 	{
@@ -13,7 +14,10 @@ int digit(int n)
 
 int main()
 {
-	digit(1234);
+	int n = 0;
+	printf("请输入一个整数：\n");
+	scanf("%d",&n);
+	digit(n);
 	system("pause");
 	return 0;
 }

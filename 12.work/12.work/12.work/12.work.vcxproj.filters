@@ -15,16 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="print.c">
+    <ClCompile Include="average.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="1count.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="returndiffer.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="printdifferbit.c">
+    <ClCompile Include="change.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

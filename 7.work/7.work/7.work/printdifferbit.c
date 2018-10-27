@@ -1,17 +1,22 @@
-//输出一个数字的每一位
+//偶数位和奇数位
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 
-void Print(int x)
+void Print(int n)
 {
-	if (x > 9)
+	int i = 0;
+	for (i = 31; i > 0; i -= 2)
 	{
-		Print(x / 10);
+		printf("%d", (n >> i) & 1);
 	}
-	printf("%d ", x % 10);
-
+	printf("\n");
+	for (i = 30; i >= 0; i -= 2)
+	{
+		printf("%d", (n >> i) & 1);
+	}
 }
+
 
 int main()
 {

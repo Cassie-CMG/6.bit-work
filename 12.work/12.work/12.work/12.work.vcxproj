@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{BAE83B99-E732-4056-B521-AB665D9DA96C}</ProjectGuid>
-    <RootNamespace>My7work</RootNamespace>
+    <ProjectGuid>{8257E50C-181D-476D-95A6-2926F6430397}</ProjectGuid>
+    <RootNamespace>My12work</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -64,10 +64,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1count.c" />
-    <ClCompile Include="printdifferbit.c" />
-    <ClCompile Include="print.c" />
-    <ClCompile Include="returndiffer.c" />
+    <ClCompile Include="average.c" />
+    <ClCompile Include="change.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
