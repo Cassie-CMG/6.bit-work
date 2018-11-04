@@ -127,7 +127,6 @@ char CheckOver()
 	}
 	return ' ';
 }
-//ºÏ≤È «∑Ò∫Õ∆Â
 
 int main()
 {
