@@ -18,7 +18,13 @@
     <ClCompile Include="average.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="change.c">
+    <ClCompile Include="student.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="turn.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="find.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

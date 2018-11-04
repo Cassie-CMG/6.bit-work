@@ -65,7 +65,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="average.c" />
-    <ClCompile Include="change.c" />
+    <ClCompile Include="find.c" />
+    <ClCompile Include="student.c" />
+    <ClCompile Include="turn.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
