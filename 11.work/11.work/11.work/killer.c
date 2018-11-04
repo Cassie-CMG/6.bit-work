@@ -6,25 +6,25 @@
 //D说：C在胡说
 //已知3个人说了真话，1个人说的是假话。
 //现在请根据这些信息,判断谁是凶手。
-//#include <stdio.h>
-//#include <stdlib.h>
-//
-//void killer()
-//{
-//	char killer = '0';
-//	for (killer = 'A'; killer <= 'D'; killer++)
-//	{
-//		if ((killer != 'A') + (killer == 'C') + (killer == 'D') + (killer != 'D') == 3)
-//		{
-//			printf("凶手是:%c\n", killer);
-//			break;
-//		}
-//	}
-//}
-//
-//int main()
-//{
-//	killer();
-//	system("pause");
-//	return 0;
-//}
+#include <stdio.h>
+#include <stdlib.h>
+
+void killer()
+{
+	char killer = '0';
+	for (killer = 'A'; killer <= 'D'; killer++)
+	{
+		if ((killer != 'A') + (killer == 'C') + (killer == 'D') + (killer != 'D') == 3)
+		{
+			printf("凶手是:%c\n", killer);
+			break;
+		}
+	}
+}
+
+int main()
+{
+	killer();
+	system("pause");
+	return 0;
+}
