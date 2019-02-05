@@ -29,7 +29,6 @@ int Menu()
 	printf("         4.修改联系人\n");
 	printf("         5.显示所有联系人\n");
 	printf("         6.清空所有联系人\n");
-	printf("         7.保存联系人到文件\n");
 	printf("         0.退出通讯录\n");
 	printf("__________________________________\n");
 	printf("请输入您要进行操作的编号： ");
@@ -170,12 +169,8 @@ void Print()
 
 void Clear()
 {
-
-}
-
-void Save()
-{
-
+	addrbook.size = 0;
+	printf("联系人已清空！\n");
 }
 
 int main()
@@ -209,9 +204,6 @@ int main()
 		case 6:
 			Clear();
 			//清空所有联系人
-			break;
-		case 7:
-			Save();
 			break;
 		case 0:
 			printf("通讯录已退出！\n");
